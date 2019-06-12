@@ -45,9 +45,9 @@ def getRepositoryPassword() {
 publish {
     userOrg = 'yongjhih'
     groupId = 'com.infstory'
-    artifactId = 'rxschedulers-pro'
+    artifactId = 'rxjava-schedulers-pro'
     publishVersion = '2.0.0'
-    desc = 'rxschedulers'
+    desc = 'rxjava-schedulers'
     website = 'https://github.com/yongjhih/android-proguards'
     bintrayUser = getRepositoryUsername()
     bintrayKey = getRepositoryPassword()
