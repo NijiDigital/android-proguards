@@ -1,3 +1,5 @@
+Forked from <https://github.com/yongjhih/android-proguards>
+
 # android proguards
 
 [![Android Weekly](https://img.shields.io/badge/Android%20Weekly-%23230-blue.svg)](http://androidweekly.net/issues/issue-230)
@@ -7,29 +9,9 @@
 
 [![proguard-snippets.png](art/proguard-snippets.png)](art/proguard-snippets.png)
 
-Use one line to apply almost famous libraries of proguard configurations:
-
-```gradle
-compile 'com.infstory:proguard-snippets:1.0.0'
-```
-
-That's it.
-
 ## Installation
 
-Via jcenter
-
-```gradle
-repositories {
-    jcenter()
-}
-
-dependencies {
-    compile 'com.infstory:proguard-snippets:1.0.0'
-}
-```
-
-Or via jitpack.io
+via jitpack.io
 
 ```gradle
 repositories {
@@ -38,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.yongjhih.android-proguards:android-proguards-all:-SNAPSHOT'
+    implementation 'com.github.NijiDigital.android-proguards:android-proguards-all:-SNAPSHOT'
 }
 ```
 
@@ -51,103 +33,104 @@ repositories {
 }
 
 dependencies {
-    compile 'io.reactivex:rxjava:1.2.1'
-    compile 'com.github.yongjhih.android-proguards:rxjava-pro:-SNAPSHOT'
+    implementation 'io.reactivex:rxjava:1.2.1'
+    implementation 'com.github.NijiDigital.android-proguards:rxjava-pro:-SNAPSHOT'
 }
 ```
 
 For each proguard rule dep:
 
 ```gradle
-compile 'com.github.yongjhih.android-proguards:acra-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:action-bar-sherlock-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:activeandroid-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:adjust-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:admob-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:alibaba-fastjson-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:androidannotations-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:android-gif-drawable-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:androidquery-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:android-view-animations-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:auto-parse-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:avro-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:aws-1.7-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:aws-2.1.5-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:butterknife-6-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:butterknife-7-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:calligraphy-2.1.0-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:circular-progress-button-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:crashlytics-1-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:crashlytics-2-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:crittercism-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:crosswalk-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:dagger-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:deeplinkdispatch-1.5-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:easy-adapter-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:eventbus-2-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:eventbus-3-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:fabric-twitter-kit-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:facebook-conceal-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:facebook-fresco-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:facebook-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:facebook-stetho-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:flurry-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:glide-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:google-admob-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:google-analytics-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:google-auto-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:google-iap-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:google-play-services-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:greendao-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:gson-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:guava-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:icepick-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:jackson-2-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:joda-convert-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:joda-time-android-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:joda-time-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:jsoup-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:logansquare-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:logback-android-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:mikepenz-android-iconics-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:mixpanel-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:mopub-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:mpandroidchart-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:new-relic-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:okhttp3-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:okhttp-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:okio-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:otto-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:parceler-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:parse-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:picasso-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:project-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:realm-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:retrofit2-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:retrofit-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:retrolambda-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:rxjava-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:rxjava-promises-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:signpost-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:simple-parse-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:simple-xml-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:sqlite-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:support-design-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:support-v7-appcompat-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:support-v7-cardview-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:svgandroid-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:tencent-bugly-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:twowayview-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:wire-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:wizardroid-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:google-gms-safetynet-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:google-gms-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:zendesk-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:zendesk-chat-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:auto-bundle-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:webkit-pro:-SNAPSHOT'
-compile 'com.github.yongjhih.android-proguards:apache-http-legacy-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:acra-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:action-bar-sherlock-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:activeandroid-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:adjust-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:admob-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:alibaba-fastjson-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:androidannotations-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:android-gif-drawable-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:androidquery-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:android-view-animations-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:auto-parse-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:avro-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:aws-1.7-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:aws-2.1.5-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:butterknife-6-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:butterknife-7-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:calligraphy-2.1.0-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:circular-progress-button-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:crashlytics-1-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:crashlytics-2-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:crittercism-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:crosswalk-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:dagger-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:deeplinkdispatch-1.5-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:easy-adapter-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:eventbus-2-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:eventbus-3-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:fabric-twitter-kit-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:facebook-conceal-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:facebook-fresco-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:facebook-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:facebook-stetho-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:flurry-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:glide-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:google-admob-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:google-analytics-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:google-auto-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:google-iap-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:google-play-services-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:greendao-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:gson-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:guava-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:icepick-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:jackson-2-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:joda-convert-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:joda-time-android-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:joda-time-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:jsoup-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:logansquare-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:logback-android-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:mikepenz-android-iconics-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:mixpanel-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:mopub-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:mpandroidchart-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:new-relic-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:okhttp3-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:okhttp-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:okio-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:otto-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:parceler-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:parse-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:picasso-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:project-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:realm-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:retrofit2-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:retrofit-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:retrolambda-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:rxjava-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:rxjava-promises-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:signpost-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:simple-parse-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:simple-xml-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:sqlite-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:support-design-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:support-v7-appcompat-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:support-v7-cardview-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:svgandroid-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:tencent-bugly-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:twowayview-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:wire-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:wizardroid-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:google-gms-safetynet-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:google-gms-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:zendesk-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:zendesk-chat-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:auto-bundle-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:webkit-pro:-SNAPSHOT'
+implementation 'com.github.NijiDigital.android-proguards:apache-http-legacy-pro:-SNAPSHOT'
 ```
+
 
 ## Details
 
