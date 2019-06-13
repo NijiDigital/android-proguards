@@ -1,0 +1,58 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.novoda:bintray-release:0.9'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+repositories {
+    google()
+    jcenter()
+}
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 4
+        targetSdkVersion 28
+        consumerProguardFiles fileTree(dir: '.', include: '*.pro').getFiles().toArray()
+    }
+}
+
+dependencies {
+}
+
+apply plugin: 'com.novoda.bintray-release'
+
+def getRepositoryUsername() {
+    return hasProperty('BINTRAY_USER') ? BINTRAY_USER : ""
+}
+
+def getRepositoryPassword() {
+    return hasProperty('BINTRAY_KEY') ? BINTRAY_KEY : ""
+}
+
+publish {
+    userOrg = 'yongjhih'
+    groupId = 'com.infstory'
+    artifactId = 'arch-components-pro'
+    publishVersion = '2.0.0'
+    desc = 'arch-components'
+    website = 'https://github.com/yongjhih/android-proguards'
+    bintrayUser = getRepositoryUsername()
+    bintrayKey = getRepositoryPassword()
+    dryRun = false
+}
+
+apply plugin: 'com.github.dcendents.android-maven'
+apply from: 'javadoc.gradle'
