@@ -11,11 +11,6 @@
 -dontwarn javax.**
 -dontwarn io.realm.**
 
-# Application Realm Model classes
--keep class com.laposte.bnum.digiposteplus.core.data.model.database.** { *; }
-# WS Pojo
--keep class com.laposte.bnum.digiposteplus.core.data.model.pojo.** { *; }
-
 -keep class com.vicpin.krealmextensions.**
 -keepnames public class * extends io.realm.RealmObject
 -keepnames public class * extends io.realm.RealmModel
