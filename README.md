@@ -129,6 +129,9 @@ implementation 'com.github.NijiDigital.android-proguards:zendesk-chat-pro:-SNAPS
 implementation 'com.github.NijiDigital.android-proguards:auto-bundle-pro:-SNAPSHOT'
 implementation 'com.github.NijiDigital.android-proguards:webkit-pro:-SNAPSHOT'
 implementation 'com.github.NijiDigital.android-proguards:apache-http-legacy-pro:-SNAPSHOT'
+
+implementation 'com.github.NijiDigital.android-proguards:pdfviewer-pro:-SNAPSHOT'
+
 ```
 
 
