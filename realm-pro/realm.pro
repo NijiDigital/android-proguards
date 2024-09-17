@@ -10,3 +10,7 @@
 -keep @io.realm.internal.Keep class *
 -dontwarn javax.**
 -dontwarn io.realm.**
+
+-keep class com.vicpin.krealmextensions.**
+-keepnames public class * extends io.realm.RealmObject
+-keepnames public class * extends io.realm.RealmModel
